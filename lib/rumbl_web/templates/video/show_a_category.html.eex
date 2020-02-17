@@ -1,0 +1,9 @@
+<h1>Showing Videos under Action</h1>
+
+<table>
+<%= for %{category_name: category_name, url: url, username: userName} <- @videos do %>
+    <tr>
+        <td><%= url %> by: <Strong><%= userName %></Strong> </td>
+    </tr>
+<% end %>
+</table>
